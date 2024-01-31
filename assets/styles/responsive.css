@@ -1,0 +1,133 @@
+/* Pc */
+@media (min-width: 64em) {
+   
+
+    #header .menu-btn-mobile {
+        display: none;
+    }
+
+}
+
+/* Tablet*/
+@media (min-width : 46.25em) and (max-width: 63.938em) {
+
+    .modal-container {
+        width: 90%;
+    }
+    
+    #header .menu-btn-mobile {
+        display: none;
+    }
+    
+}
+
+/* Mobile*/
+@media (max-width: 46.188em) {
+    
+    #header {
+        display: block;
+        overflow: hidden;
+    }
+    
+    #header .search-btn {
+        display: none;
+    }
+
+    #header .menu-btn-mobile {
+        position: absolute;
+        color: #fff;
+        line-height: 46px;
+        top: 0;
+        right: 0;
+        padding: 0 20px;
+    }
+
+    #header .subnav {
+        position: initial;
+        background: #333;
+    }
+
+    #header .subnav a {
+        color: #fff;
+        padding: 3px 31px ;
+    }
+
+    #nav li {
+        display: block;
+    }
+
+    #nav > li:nth-child(1) {
+        display: inline-block;
+    }
+
+    
+    #slider .slides .text-content {
+        display: none;
+    }
+
+    #content .members-list {
+        
+    }
+
+    #content .member-item {
+        flex-grow: 1;
+        text-align: center;
+    }
+  
+    #content .member-img {
+        width: 60%;
+        
+    }
+
+    .places-list {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .places-list .place-item {
+        margin-top: 16px;
+        flex-grow: 1;
+    }
+
+    .buy-ticket-btn {
+        width: 100%;
+        padding: 14px 0px;
+    }
+
+    .contact-content {
+        flex-wrap: wrap;
+    }
+
+    .contact-form .form-control {
+        padding: 13px 18px;
+    }
+
+    .contact-content .contact-info {
+        flex-basis: 100%;
+    }
+
+    .contact-content .contact-form {
+        flex-basis: 100%;
+        margin-top: 28px;
+
+    }
+
+    .contact-form .user-info {
+        flex-wrap: wrap;
+    }
+
+     .contact-form .user-info input {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .contact-form input[type="submit"] {
+        width: 100%;
+        padding: 14px 0;
+    }
+
+    .modal-container {
+        width: 95%;
+    }
+
+}

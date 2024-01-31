@@ -1,0 +1,536 @@
+/* Reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common */
+html {
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.clear {
+    clear: both;
+}
+
+.bd-style {
+    border: 1px solid #ccc !important;
+}
+
+
+
+
+
+
+#main {
+ 
+}
+
+/* header */
+#header {
+    display: flex;
+    height: 46px;
+    width: 100%;
+    background: #000;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
+
+#header .search-btn  {
+    line-height: 46px;
+}
+
+#header .search-icon {
+    padding: 0 22px;
+    font-size: 18px;
+}
+
+#header .search-btn:hover {
+    background: #f44336;
+    cursor: pointer;
+}
+
+/* nav */
+#nav li {
+    position: relative;
+}
+
+#nav > li {
+    display: inline-block;
+    margin-left: -2.6px;
+}
+
+#nav li a {
+    padding: 0 24px;
+    line-height: 46px;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+}
+
+#nav > li > a {
+    color: #fff;
+}
+
+/* sub navigation */
+#nav .subnav {
+    display: none;
+    min-width: 160px;
+    list-style-type: none;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 3px 8px  rgba(0, 0, 0, 0.4);
+}
+
+#nav .subnav a {
+    color: #000;
+    text-transform: capitalize;
+    line-height: 38.5px;
+    padding-left: 17px;
+}
+
+#nav .subnav .arrow-down-icon {
+    font-size: 14px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a,
+#header .menu-btn-mobile:hover {
+    background: #ccc;
+    color: #000;
+}
+
+.open-subnav {
+    display: block !important;
+}
+
+/* Slide */
+#slider {
+    margin-top: 46px;
+}
+
+#slider .slides {
+    position: relative;
+}
+
+#slider .slides img {
+    width: 100%;
+    display: block;
+}
+
+
+#slider .text-content {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    padding: 32px 16px;
+    text-shadow: 0 0 4px #000;
+}
+
+#slider .heading-content {
+    margin: 10px 0;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+#slider .desc-content {
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+
+/* Content */
+#content {
+}
+
+#content .content-section {
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 16px;
+    margin: auto;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 10px 0;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 100;
+    opacity: 0.6;
+    margin: 15px 0;
+}
+
+#content .about-text {
+    font-size: 15px;
+    text-align: justify;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+#content .members-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 32px 0;
+}
+
+#content .member-item {
+
+}
+
+#content .member-name {
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+#content .member-img {
+    width: 153.5px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+
+/* Tour section */
+
+.tour-section {
+    background-color: #000;
+}
+
+.tickets-list {
+    background: #fff;
+    margin-top: 34px;
+    font-size: 15px;
+    color: #757575;
+    list-style-type: none;
+}
+
+.tickets-list li {
+    padding: 10px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tickets-list .sold-out {
+    background: #f44336;
+    color: #fff;
+    padding: 2px 8px;
+    margin-left: 16px;
+}
+
+.tickets-list .quantity {
+    background: #000;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    float: right;
+    margin-top: -2px;
+    margin-right: 18px;
+}
+
+
+/* Place */
+.places-list {
+    padding: 32px 8px;
+    margin: 0 -16px;
+    display: flex;
+}
+
+.place-item {
+    padding: 0 8px;
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-body {
+    background: #fff;
+    padding: 0 16px;
+    font-size: 15px;
+}
+
+.place-heading {
+    font-size: 15px;
+    padding: 15px 0;
+    text-transform: capitalize;
+}
+
+.place-times {
+    padding-bottom: 15px;
+    opacity: 0.6;
+    font-weight: 100;
+}
+
+.place-desc {
+    padding-bottom: 15px;
+}
+
+.buy-ticket-btn {
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+    text-transform: capitalize;
+    padding: 10px 16px;
+    margin-bottom: 16px;
+    border: none;
+}
+
+.buy-ticket-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+/* Contact */
+
+.contact-content {
+    display: flex;
+    padding: 32px 0;
+}
+
+.contact-info {
+    flex-basis: 50%;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.contact-info i[class*="fa-"] {
+    width: 30px;
+}
+
+.contact-form {
+    flex-basis: 50%;
+}
+
+.contact-form .form-control {
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+.contact-form .user-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form .user-info input {
+   width: 48%;
+}
+
+.contact-form .user-message {
+    display: block;
+    margin-top: 8px;
+  
+}
+
+.contact-form .user-message input {
+    width: 100%;
+}
+
+.contact-form input[type="submit"] {
+    margin: 16px 0;
+    float: right;
+    padding: 11px 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: none;
+    background: #000;
+    color: #fff;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+
+/* Map */
+.map-section img{ 
+   filter: grayscale(50%);
+   width: 100%;
+}
+
+
+#fotter {
+    padding: 64px 16px;
+    text-align: center;
+    background: #f1f1f1;
+}
+
+#fotter .social-list a {
+    display: inline-block;
+    font-size: 22px;
+    padding: 0 3px;
+    color: #000;
+    opacity: 0.6;
+}
+
+#fotter .social-list a:hover {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+#fotter .coppyright {
+    margin: 16px 0;
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+#fotter .coppyright a {
+    color: #000;
+}
+
+/* Modal tickets */
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 20000;
+}
+
+.modal-container {
+    background: #fff;
+    width: 900px;
+    font-size: 15px;
+    animation: modalFadeIn ease-out 0.3s;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    font-size: 22px;
+    color: #fff;
+    padding: 12px 16px;
+    opacity: 0.8;
+}
+
+.modal-close:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 32px 16px;
+    background: #009688;
+    color: #fff;
+}
+
+.modal-header h3 {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 0;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.modal-header .modal-icon {
+    margin-right: 4px;
+}
+
+.modal-body {
+    padding: 15px 16px;
+    font-size: 15px;
+}
+
+.modal-label {
+    display: block;
+    margin-bottom: 14px;
+}
+
+.modal-input {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 26px;
+}
+
+.modal-btn-buy-ticket {
+    width: 100%;
+    margin-top: -10px;
+    padding: 19px;
+    font-size: 15px;
+    background: #009688;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.modal-btn-buy-ticket:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+.modal-fotter {
+    float: right;
+}
+
+.modal-help {
+    margin-top: 15px;
+    margin-bottom: 24px;
+    margin-right: 16px;
+}
+
+.modal-help a {
+    color: #2196F3;
+}
+
+.open-modal {
+    display: flex;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-300px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
